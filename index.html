@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kitab və dəvətnamə hazırlanması</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+#mySidebar{
+    bottom: 0;
+    top: 45px;
+}
+.bucont{
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.foot1>p{
+  color: aliceblue;
+  margin-top: 20px;
+  margin-left: 5%;
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 15px;
+  font-weight: bold;
+}
+.foot1{
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.foot1>.m1{
+  color: rgb(122, 124, 125);
+  font-size: 10px;
+}
+.m1:hover{
+  color: aliceblue;
+}
+.m2{
+  margin-left: 10%;
+}
+.foot2{
+  flex-wrap: wrap;
+  
+}
+.text{
+  margin-top: 20px;
+}
+
+@media (max-width : 650px) {
+  .foot1>p{
+    font-size: 11px;
+  }
+  .bucont{
+    height: 800px;
+  }
+  .text{
+    text-align: center;
+  }
+  .hr{
+    width: 300px;
+    margin-left: 5px;
+  }
+  .mm{
+    margin-left: 5px;
+  }
+  .is>i{
+    color: aliceblue;
+    margin-left: 10px;
+  }
+  .by{
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+.h4{
+  flex-wrap: nowrap;
+  display: inline-block;
+}
+h4{
+  color: aliceblue;
+
+
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">Xidmətlər</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="ilkinmellim.jpeg" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span> <strong>İlkin Rəhmətov</strong></span><br>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Əsas Menu</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Menudan çıxış</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Dəvətnamələrin Hazırlanması</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Kitabların Hazırlanması</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Bizimlə Əlaqə</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <div class="w3-container info  w3-center w3-wide" id="rsvp">
+        <h1 id="h1">Dəvətnamələrin Hazirlanmasi Sizin İstəyinizə Uyğun!</h1>
+        <p class="w3-large">RƏQƏMSAL DƏVƏTNAMƏ ÇAPI VƏ DƏVƏTNAMƏ SİFARİŞİ</p>
+        <p class="w3-opacity"><i>Dəvətnamə dizaynı</i></p>
+      </div>
+      <div class="w3-container w3-content w3-center " style="max-width:900px">
+        <p class="w3-justify">Devetnamelerin hazirlanmasi ilə maraqlanırsınızsa, sizin zövqünüzə və istəyinizə uyğun hazırlanacağına əmin ola bilərsiniz. Hal- hazırda hər kəs toy gününü daha unudulma etmık üçün özləri dəvətnamələrə yeni dizayn verərək hazırladırlar. Siz də yeni və fərqli dəvətnamə istəyirsinizsə, devetnamelerin hazirlanmasi üçün biz sizin xidmətinizdəyik.Devetnamelerin hazirlanmasi artıq əvvəlki illərlə müqayisədə çox dəyişilib. Evlənəsi cütlük toylarını fərqli və yaddaqalan etmək üçün dəvətnamələrində də xüsusi dizaynda hazırlatmağa can atırlar. Türkiyədək xüsusi sifarişinizlə hazırlanıb gətirilən devetnamelerin hazirlanmasi işini bizə həvalə edə bilərsiniz.</p>
+          </div>
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img src="sandwich.jpg" alt="Sandwich" style="width:100%">
+        <h3>Özəl günləriniz üçün özəl dəvətnamələr </h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="steak.jpg" alt="Steak" style="width:100%">
+        <h3>Xina məclisi üçün yeni nümunələrimiz</h3>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="popsicle.jpg" alt="Cherries" style="width:100%">
+        <h3>Masa üstü şokoladlı mini-açıqcalar</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <p>What else?</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="wine.jpg" alt="Pasta and Wine" style="width:100%">
+        <h3>Arzu edilən dizaynda açıqcaların hazırlanması və çapı</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+    
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <img src="popsicle.jpg" alt="Popsicle" style="width:100%">
+        <h3>Rəsmi görüşləriniz üçün dəvətnamələr</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="cherries.webp" alt="Salmon" style="width:100%">
+        <h3>Toy, nişan və özəl günləriniz üçün dəvətnamələr.</h3>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="sandwich.jpg" alt="Sandwich" style="width:100%">
+        <h3>RƏQƏMSAL DƏVƏTNAMƏ ÇAPI</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="unnamed.png" alt="Croissant" style="width:100%">
+        <h3>Toy dəvətnaməsi</h3>
+        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+    
+    <hr id="about">
+    <div class="bucont fot">
+      <div class="foot1 m2 fot2">
+        <p>DƏVƏTNAMƏ HAZIRLANMASI</p>
+        <p class="p m1">Toy</p>
+        <p class="p m1">Xına</p>
+        <p class="p m1">Nişan</p>
+        <p class="p m1">Gəlin</p>
+
+      </div>
+      <div class="foot1 m2 fot3">
+        <p>KİTABLARIN HAZIRLANMASI</p>
+        <p class="p m1">Elektron</p>
+        <p class="p m1">Careers</p>
+        <p class="p m1">Investors</p>
+        <p class="p m1">Purpose</p>
+
+      </div>
+      <div class=" w3-content contact w3-text-grey fot4" id="contact">
+        <h2 class="w3-text-light-grey text">Bizimlə Əlaqə</h2>
+        <hr class="hr">
+  
+        <div class=" mm w3-section">
+          <p><i class="fa fa-map-marker  fa-fw w3-text-white  w3-margin-right"></i> Azərbaycan, Bakı</p>
+          <p><i class="fa fa-phone fa-fw  w3-text-white  w3-margin-right"></i> Phone: +994 55 764 69 18</p>
+          <p><i class="fa fa-envelope  fa-fw w3-text-white  w3-margin-right"> </i> Email: mail@gmail.com</p>
+  
+          <div class="is">
+            <i id="icon" class="fa  fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </div>
+  
+          <p class="by w3-medium">Web Site by © <a href="https://khayal994.github.io/Khayal-Mansimov/" target="_blank"
+              class="w3-hover-text-green">Khayal Mansimov</a></p>
+        </div><br>
+  
+  
+      </div>
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
