@@ -13,6 +13,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     bottom: 0;
     top: 45px;
 }
+
+.mySlides {display: none}
 .bucont{
   background-color: black;
   width: 100%;
@@ -206,7 +208,62 @@ h4{
         <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
       </div>
     </div>
-    
+    <!-- slideShow -->
+    <div class="w3-container" id="apartment">
+      <h2 class="w3-text-green">Video Dəvətnamə</h2>
+      <div class="w3-display-container mySlides">
+        <video controls style="width:100%">
+          <source src="video.mp4" type="video/mp4"> <!-- Video URL buraya yazılacaq -->
+          Your browser does not support the video tag.
+        </video>
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Dəvətnamə</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <video controls style="width:100%">
+          <source src="video.mp4" type="video/mp4"> <!-- Video URL buraya yazılacaq -->
+          Your browser does not support the video tag.
+        </video>
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Dəvətnamə</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <video controls style="width:100%">
+          <source src="video.mp4" type="video/mp4"> <!-- Video URL buraya yazılacaq -->
+          Your browser does not support the video tag.
+        </video>
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Dəvətnamə</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <video controls style="width:100%">
+          <source src="video.mp4" type="video/mp4"> <!-- Video URL buraya yazılacaq -->
+          Your browser does not support the video tag.
+        </video>
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Dəvətnamə</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s3">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="bigPX.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="bigPX.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="bigPX.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="bigPX.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+      </div>
+    </div>
+    <br><br><br>
+    <!-- contact -->
     <hr id="about">
     <div class="bucont fot">
       <div class="foot1 m2 fot2">
@@ -250,6 +307,44 @@ h4{
   
       </div>
 <script>
+  // Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Videos
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
